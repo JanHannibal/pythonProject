@@ -9,6 +9,10 @@ powtarzanie_petli = 1000
 print(' ')
 maksymalne_cyfry_w_dodawaniu = input('jaką maksymalną liczbę lub cyfre chcesz dodać  ')
 
+ilosc_poprawnych_odpowiedzi = 0
+
+ilosc_niepoprawnych_odpowiedzi = 0
+
 while powtarzanie_petli > 0:
     try:
 
@@ -35,10 +39,12 @@ while powtarzanie_petli > 0:
             print(' ')
             print('dobrze')
             print(' ')
+            ilosc_poprawnych_odpowiedzi = ilosc_poprawnych_odpowiedzi + 1
         else:
             print(' ')
             print('źle')
             print(' ')
+            ilosc_niepoprawnych_odpowiedzi = ilosc_niepoprawnych_odpowiedzi + 1
 
         print('-----  MENU  -----')
         print('1 = następne działanie')
@@ -47,15 +53,18 @@ while powtarzanie_petli > 0:
         print("--------------------")
 
         if wybor_menu == '2':
-            print('do widzenia')
             powtarzanie_petli = 0
 
         elif wybor_menu == '1':
             continue
 
         else:
-            exit('błąd zrobiłeś')
+            break
 
     except:
         print('miałeś podać liczbę')
-    print( )
+    print(' ')
+
+print('ilość poprawnych odpowiedzi: ', ilosc_poprawnych_odpowiedzi)
+print('ilość niepoprawnych odpowiedzi: ', ilosc_niepoprawnych_odpowiedzi)
+print('do widzenia')
