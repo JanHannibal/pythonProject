@@ -13,10 +13,8 @@ elif d == 'Polski':
 random_number = random.randrange(0, 100)
 
 if d == 'English':
-#print('Hello, welcome to the game guess what number 0.1 beta version without graphics')
     print('Author czwartoklasista z laptopem https://www.youtube.com/results?search_query=czwartoklasista+z+laptopem')
 elif d == 'Polski':
-#print('Cześć, witaj w grze zgadnij jaka to liczba 0.1 wersja beta bez grafiki')
     print('Autor Czwartoklasista z laptopem https://www.youtube.com/results?search_query=czwartoklasista+z+laptopem')
 print('wpisz jaka liczba lub cyfra się wylosowała')
 print('enter the number or digit that was drawn')
